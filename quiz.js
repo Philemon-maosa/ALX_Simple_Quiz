@@ -1,5 +1,5 @@
 function checkAnswer() {
-    const correctAnswer = "b"; // or whatever the correct value is
+    const correctAnswer = "4"; // This matches the value of the correct radio button
 
     const userAnswer = document.querySelector('input[name="quiz"]:checked')?.value;
     const feedback = document.getElementById("feedback");
@@ -19,7 +19,7 @@ function checkAnswer() {
     }
 }
 
-// Attach the event listener after the DOM is fully loaded
+// Run after DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.getElementById("submit-answer");
     submitButton.addEventListener("click", checkAnswer);
